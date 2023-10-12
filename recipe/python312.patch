@@ -1,0 +1,14 @@
+--- __init__.py.orig	2023-10-12 20:04:57
++++ __init__.py	2023-10-12 20:07:54
+@@ -8,8 +8,9 @@
+ from builtins import range
+ from builtins import int
+ from builtins import chr
+-from future import standard_library
+-standard_library.install_aliases()
++# These lines break the Python 3.12 compatilibity. They were needed only needed for Python 2, so should be fair to simply remove.
++# from future import standard_library
++# standard_library.install_aliases()
+ from builtins import object
+ import math
+ import re
