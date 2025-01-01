@@ -10,10 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - python312.patch
 
 build:
   noarch: python
-  number: 1002
+  number: 1003
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
