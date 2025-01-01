@@ -1,8 +1,8 @@
 diff --git a/lzstring/__init__.py b/lzstring/__init__.py
-index a264411..f157e4a 100644
+index a264411..16731b2 100644
 --- a/lzstring/__init__.py
 +++ b/lzstring/__init__.py
-@@ -8,8 +8,9 @@ from __future__ import absolute_import
+@@ -8,8 +8,10 @@ from __future__ import absolute_import
  from builtins import range
  from builtins import int
  from builtins import chr
