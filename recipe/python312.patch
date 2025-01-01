@@ -9,6 +9,7 @@ index a264411..f157e4a 100644
 -from future import standard_library
 -standard_library.install_aliases()
 +# These lines break the Python 3.12 compatilibity. They were needed only needed for Python 2, so should be fair to simply remove.
++# PR to fix upstream: https://github.com/gkovacs/lz-string-python/pull/6
 +# from future import standard_library
 +# standard_library.install_aliases()
  from builtins import object
